@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
+body {
+  font-size: 1.5em;
+  font-family: "Smokum", cursive;
+  line-height: 1.5;
+  background-color: bisque;
+  color: rgb(49, 207, 34);
+}
+
+.bayan {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.bayan-item {
+  border: 1px solid brown;
+  margin-bottom: 10px;
+}
+
+.bayan-title {
+  display: block;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.bayan-title:hover {
+  background-color: brown;
+}
+
+.bayan-input {
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.bayan-input:checked ~ .bayan-title {
+    background: brown;
+  }
+
+.bayan-input:checked ~ .bayan-img {
+  display: block;
+}
+
+p {
+  margin: 0 0 5px;
+}
+
+.bayan-img {
+  display: none;
+}
